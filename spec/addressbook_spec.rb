@@ -1,15 +1,16 @@
 require 'spec_helper'
 
-describe "AddressBook class" do
-  it 'should store details in the address book' do 
+describe "AddressBook" do
+  it 'should load people from a yaml file' do 
    
-    person = Person.new("joe", "bloggs", "1 Jan 1990")
-    expect(person.dob).to eq Date.new(1990, 1, 1)
-    expect(person.first_name).to eq "Joe"
-    expect(person.surname).to eq "Bloggs"
-    expect(person.fullname).to eq "Joe Bloggs"
-    book = AddressBook.new
-    expect(book.add).to eq (person)
+    ab = AddressBook.new
+    ab.load_yaml('./spec/test_data/people_test_data.yml')
+    expect(ab.entries.size).to eq 1
+    expect(ab.last).to be_a Person
+    expect(ab.last.surname).to eq "loren"
+    expect(ab.last.emails.first).to eq "j@hotmail.com"
   end
+
+
 
 end

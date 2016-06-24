@@ -1,0 +1,39 @@
+person:
+
+
+  - fname: joe
+    surname: loren
+    dob: 3 Sept 2000
+    emails:
+          - j@hotmail.com
+          - f@hotmail.co.uk
+    phones:
+                  - 9403850873507
+
+  - fname: carl
+    surname: do
+    dob: 3 Sept 2000
+    emails:
+          - cj@hotmail.com
+    phones:
+                  - 947570873507
+
+  - fname: amanda
+    surname: ur
+    dob: 3 Sept 2000
+    emails:
+          - ur@hotmail.com
+          - ura@hotmail.co.uk
+    phones:
+                  - 9403850873507
+                  - 0558656864865
+
+  - fname: sra
+    surname: pete
+    dob: 3 Sept 2000
+    emails:
+          - j@hotmail.com
+          - f@hotmail.co.uk
+          - f@yahoo.com
+    phones:
+                  - 9403850873507

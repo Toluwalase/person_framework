@@ -27,6 +27,11 @@ class Person
   end
   def remove_phone(place)
     @phone.delete_at(place)
-
   end
+  # def write_yaml(writebook)
+  #   files = File.open('phonebook_data.yml', 'a')
+  #   do | files|
+  #     files.write
+  #   end
+  # end
 end
